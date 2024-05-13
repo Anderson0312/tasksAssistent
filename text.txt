@@ -1,0 +1,5 @@
+npm add autoprefixer postcss react-beautiful-dnd react-ionicons styled-components react-router-dom tailwindcss
+
+npm create vite@latest
+
+npx tailwindcss init -p
