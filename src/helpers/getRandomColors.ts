@@ -16,6 +16,6 @@ const colors:{[key:string]:Color} ={
 
 export const getRandomColors = ():Color => {
     const keys = Object.keys(colors);
-    const randomKeys = keys.[Math.floor(Math.random()*keys.length)];
+    const randomKeys = keys[Math.floor(Math.random()*keys.length)];
     return colors[randomKeys];
 }

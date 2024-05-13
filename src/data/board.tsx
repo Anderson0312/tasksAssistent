@@ -1,6 +1,6 @@
 import { Columns } from "../types";
 import {v4 as uuidv4 } from 'uuid';
-import taskImage from '../assets/images/task-image.png';
+import taskImage from '../assets/images/estudofundo.jpg';
 import {getRandomColors} from '../helpers/getRandomColors';
 
 export const Board: Columns = {

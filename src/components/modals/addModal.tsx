@@ -71,8 +71,9 @@ const AddModal = ({isOpen, onClose, setOpen, handleAddTask}: AddModalProps) => {
 
     return (
         <div>
-
+            
         </div>
     )
 }; 
 
+export default AddModal

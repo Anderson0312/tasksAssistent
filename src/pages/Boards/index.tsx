@@ -3,7 +3,7 @@ import {Board} from '../../data/board';
 import {Columns} from '../../types';
 import {onDragEnd} from '../../helpers/onDragEnd';
 import { AddOutline } from 'react-ionicons';
-import {AddMOdal} from '../../components/modals/addModal';
+import AddModal from '../../components/modals/addModal';
 import Task from '../../components/task';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
@@ -40,7 +40,7 @@ const Home = () => {
                   {...provided.droppableProps}
                   className='flex flex-col md:w-[290px] w-[50px] gap-3 items-center py-5'
                   >
-                    <div className='flex items-center justify-center py-[10px] w-full bg-white rounded-lg shadow-sm text-[#555] font-size-bold' {column.name}>
+                    <div className='flex items-center justify-center py-[10px] w-full bg-white rounded-lg shadow-sm text-[#555] font-size-bold' {...column.name}>
                     </div>
                     {column.items.map((task:any, index:any) =>(
                       <Draggable key={task.id.toString()}
@@ -72,7 +72,7 @@ const Home = () => {
 
         </div>
       </DragDropContext>
-          <AddMOdal
+          <AddModal
             isOpen={modalOpen}
             onClose={closeModal}
             setOpen = {setModalOpem}
